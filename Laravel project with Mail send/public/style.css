@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fcd333;
+    color: black;
+    font-family: "Ubuntu", sans-serif;
+  }
+  a {
+    color: black !important;
+  }
+  a:hover {
+    text-decoration: none !important;
+  }
+  .a-nav {
+    font-size: 1.2em;
+  }
+  .nav-logo {
+    width: 200px;
+  }
+  .nav-shadow {
+    -webkit-box-shadow: 0px 6px 7px -3px rgba(0, 0, 0, 0.63);
+    box-shadow: 0px 6px 7px -3px rgba(0, 0, 0, 0.1);
+  }
+  .logo-size {
+    width: 100px !important;
+  }
+  
+  .cover-dark {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 60vh;
+    width: 100%;
+  }
+  .text-cover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    color: #ffffff;
+    text-shadow: 4px 3px 0 #7a7a7a;
+  }
+
+  .small-cover-text
+  {
+      font-size: 1rem;
+      text-shadow: 0px 0px 0 #7a7a7a;
+  }
+  .zoom:hover {
+    transition: transform 0.5s;
+    transform: scale(1.02);
+    box-shadow: 0px 1px 10px 0px rgba(58, 57, 57, 0.68);
+  }
+  .zoom-show {
+    visibility: hidden;
+  }
+  .zoom:hover a,
+   .zoom:hover form{
+    visibility: visible;
+  }
+  .form-login{
+    min-height: 70vh;
+  }
+  footer {
+    letter-spacing: 0.1em;
+  }
+
+  .card-img-top
+{
+  height: 200px;
+}  
+  @media only screen and (max-width: 768px){
+    
+    .navbar {
+      padding:5px;
+      margin-left: 0px !important;
+    }
+  
+   
+  }
+  @media only screen and (max-width: 425px){
+    .small {
+      background-color: #312F38;
+      padding:10px 5px;
+    }
+    .a-nav  {
+      color:white !important;
+    }
+    .main_picture {
+      background-attachment: inherit;
+    height: 30vh;
+    }
+    .cover-dark {
+      height: 60vh;
+    }
+    .navbar {
+      padding:0px;
+    }
+    .btn {
+      
+      margin-top:20px;
+    }
+    
+   
+    
+  }
+  

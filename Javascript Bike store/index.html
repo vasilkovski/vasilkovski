@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bikes</title>
+    <meta name="keywords" content="html,css,javaScript" />
+    <meta name="description" content="Bikes" />
+    <meta name="author" content="" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- Latest compiled and minified BOOTSTRAP CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <!-- Local CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!-- Font-awesome 5 cdn -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+	<!-- start here -->
+	<div class="container bg p-0">
+    <nav class="navbar navbar-expand-lg border-bottom">
+      <a class="navbar-brand" href="index.html"
+        ><img style="width: 100px" src="img/logo.png"
+      /></a>
+
+      <div class=" navbar-collapse pl-5 ml-5" id="">
+        <ul class="navbar-nav mr-auto ">
+          <li class="nav-item font-weight-bold">
+            <a class="nav-link text-uppercase" href="#"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase font-weight-bold" href="#">Bikes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase font-weight-bold" href="#">Gear</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase font-weight-bold" href="#">Parts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase font-weight-bold" href="#">Tires</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase font-weight-bold" href="#">Service-info</a>
+		  </li>
+		  <li class="nav-item">
+            <a class="nav-link text-uppercase font-weight-bold" href="#">Catalogues</a>
+		  </li>
+		  <li class="nav-item">
+            <a class="nav-link text-uppercase font-weight-bold" href="#">contact</a>
+          </li>
+        </ul>
+	  </div>
+	  <div>
+		<span><i class="fas fa-search fa-2x"></i></span>
+		<span><i class="fas fa-shopping-bag fa-2x pl-2"></i></span>
+	</div>
+    </nav>
+
+	<div class="border-bottom p-2">
+		<p class="text-uppercase bikes">Bikes</p>
+	</div>
+
+	<div>
+		<div class="row p-2 ">
+			<div class="col-2">
+				<div class="filter border-bottom">
+					<p class="font-weight-bold big-font">Filter by:</p>
+					<a id="showAll" href="#" class="d-flex justify-content-between check active"><span class="show">Show all</span><span id="total" class="bg-total"></span></a> 
+				</div>
+				<div class=" border-bottom">
+					<p class="font-weight-bold big-font">Gender</p>
+					<a id="aMale" href="#" class="d-flex justify-content-between  check"><span class="gender">Male</span><span id="male" class="bg-total">0</span></a>
+					<a id="aFemale" href="#" class="d-flex justify-content-between check"><span class="gender">Female</span><span  id="female" class="bg-total">0</span></a>
+				</div>
+				<div class=" border-bottom">
+					<p class="font-weight-bold big-font">Brand</p>
+					<a id="aLeGrand" href="#" class="d-flex justify-content-between  check"><span class="text-uppercase brand">le grand bikes</span><span id="leGrand" class="bg-total">0</span></a>
+					<a id="aKross" href="#" class="d-flex justify-content-between  check"><span class="text-uppercase brand">kross</span><span id="kross" class="bg-total">0</span></a>
+					<a id="aExplorer" href="#" class="d-flex justify-content-between  check"><span class="text-uppercase brand">explorer</span><span id="explorer" class="bg-total">0</span></a>
+					<a id="aVisitor" href="#" class="d-flex justify-content-between  check"><span class="text-uppercase brand">visitor</span><span id="visitor" class="bg-total">0</span></a>
+					<a id="aPony" href="#" class="d-flex justify-content-between   check"><span class="text-uppercase brand">pony</span><span id="pony" class="bg-total">0</span></a>
+					<a id="aForce" href="#" class="d-flex justify-content-between  check"><span class="text-uppercase brand">force</span><span id="force" class="bg-total">0</span></a>
+					<a id="aEbikes" href="#" class="d-flex justify-content-between  check"><span class="text-uppercase brand">e-bikes</span><span id="e-bikes" class="bg-total" >0</span></a>
+					<a id="aIdeal" href="#" class="d-flex justify-content-between  check"><span class="text-uppercase brand">ideal</span><span id="ideal" class="bg-total">0</span></a>
+
+				</div>
+			</div>
+			<div  class="col-10">
+				<div id="bikes-cards" class="row m-0 p-1">
+					
+
+					</div>
+				</div>
+			</div>
+		</div>
+	
+
+	<footer >
+		<div class="row p-4">
+			<div class="col-3 social p-3 border-right ">
+			<p class="font-weight-bold big-font p-1 ">Social share</p>
+		<div class="d-flex justify-content-between ">
+			<a href="https://www.facebook.com/" class="p-1"><i class="fab fa-facebook-f fa-2x p-2 bg-warning text-white"></i></a>
+			<a href="https://www.instagram.com/" class="p-1"><i class="fab fa-instagram fa-2x p-2 bg-warning text-white"></i></a>
+			<a href="https://twitter.com/" class="p-1"><i class="fab fa-twitter-square fa-2x p-2 bg-warning text-white"></i></a>
+			<a href="https://www.linkedin.com/" class="p-1"><i class="fab fa-linkedin-in fa-2x p-2 bg-warning text-white"></i></a>
+		</div>
+			</div>
+			<div class="col-3 event p-3 border-right">
+				<p class="font-weight-bold big-font p-1">Event info</p>
+				<ul class="list-group">
+					<a href="#"><li >Enter Now</li></a>
+					<a href="#"><li>Event Info</li></a>
+					<a href="#"><li>Course Maps</li></a>
+					<a href="#"><li>Race Pack</li></a>
+					<a href="#"><li>Results</li></a>
+					<a href="#"><li>FAQs</li></a>
+					<a href="#"><li>Am I Registered?</li></a>
+				</ul>
+			</div>
+			<div class="col-3 registration p-3 border-right">
+				<p class="font-weight-bold big-font p-1">Registration</p>
+				<ul class="list-group">
+					<a href="#"><li>Volunteers</li></a>
+					<a href="#"><li>Gallery</li></a>
+					<a href="#"><li>Press</li></a>
+					<a href="#"><li>Results</li></a>
+					<a href="#"><li>Privacy Policy</li></a>
+					<a href="#"><li>Service Plus</li></a>
+					<a href="#"><li>Contacts</li></a>
+				</ul>
+			</div>
+			<div class="col-3 schedule">
+				<p class="font-weight-bold p-3 big-font p-1">Schedule</p>
+				<ul class="list-group">
+					<a href="#"><li>Gallery</li></a>
+					<a href="#"><li>About</li></a>
+					<a href="#"><li>Bideos</li></a>
+					<a href="#"><li>Results</li></a>
+					<a href="#"><li>FAQs</li></a>
+					<a href="#"><li>Results</li></a>
+					<a href="#"><li>Volunteers</li></a>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</div>
+    <!-- jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- <script src="js/products.js"></script> -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

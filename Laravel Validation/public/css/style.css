@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.main {
+    background-image: url("../Images/textures/bg.jpg");
+    background-position: center;
+    background-repeat: inherit;
+   
+}
+.title h2 {
+    font-size: 2em;
+}
+.dark {
+    background-color: rgba(54, 34, 22, 0.7);
+   
+}
+.nav,
+footer {
+    background-color: rgb(54, 34, 22);
+}
+.nav a {
+    text-decoration: none;
+    font-size: 1.2em;
+}
+a:hover {
+    color: rgb(240, 157, 3) !important;
+}
+.img_home {
+    width: 70%;
+}
+.section_home_1{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    width: 50%;
+    right: 0px;
+    z-index: 1;
+    top: 30%;
+}
+
+
+.section_home_1 p {
+    font-size: 8px;
+}
+
+.second_section_1_1 {
+    background-color: rgb(255, 207, 117);
+    border-style: groove;
+}
+.show{
+    color: white;
+    height: 70vh;
+}
+.center {
+    width: 50%;
+}
